@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajuste y Desbordamiento de texto en bootstrap 5.3.0</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<!-- Ajuste y desbordamiento de texto -->
+<!-- Clases a usar: text-wrap, bagde -->
+<!-- Y text-truncate esta clase coloca puntos suspensivos, y esta clase solo funciona para elementos tipo bloque-->
+<div class="container">
+  <div class="row">
+    <h2 class="text-capitalize h1 text-center text-primary">ajuste y desbordamiento</h2>
+    <div class="col-6 bg-light">
+      <p class="bg-primary text-wrap badge text-dark"style="width: 80px; height: 80px;">
+      Este texto debe ajustarse Lorem ipsum dolor sit 
+      </p>
+    </div>
+    <div class="col-6">
+      <p class="bg-success text-truncate" style="width: 80px; height: 80px;">
+      Este texto debe ajustarse Lorem ipsum dolor sit 
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

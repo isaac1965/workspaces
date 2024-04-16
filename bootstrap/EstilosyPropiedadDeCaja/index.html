@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+        font-size: 30px;
+        width: auto;
+    }
+    .parrafo {
+       height: 70px;
+       padding: 10px 20px 20px 10px;
+    }
+    .contenedor{
+      --h: 350px;
+      --w: 800px;
+      width: var(--w);
+      height: var(--h);
+    }
+    </style>
+</head> 
+<body>
+
+<!--Display-->
+<!--Sintaxis-->
+<!--d-tipoDisplay-->
+<!--d-tamaño-tipoDisplay-->
+<!--Tamaños -> xs, sm, md, lg, xl, xxl-->
+<!--Tipo display: -> block, inline, none, inline-block-->
+<div class="container">
+    <p class="p-2 w-25 text-center bg-info-subtle my-2 m-auto fw-normal ">d-inline y d-block</p>
+    <p class="d-inline-block bg-primary parrafo">"p" con d-inline-block</p>
+    <p class="d-inline-block bg-danger parrafo">p con d-inline-block</p>
+    <span class="d-block bg-secondary ps-2">span con d-block</span>
+    <span class="bg-secondary p-1">span sin d-block</span>
+</div>    
+<!-- Espaciado en bootstrap  -->
+<!-- Sintaxis: -->
+<!-- espacioUbicacion-tamaño, espacioUbicacion-pantalla-tamaño -->
+<!-- Espacio -> m | p -->
+<!-- Ubicacion -> t | b | l=s | r=e | x | y -->
+<!-- Tamaño -> 0 | 1 | 2 | 3 | 4 | 5 -->
+<!-- Pantalla -> sm | md | lg | xl -->
+    <div class="container">
+        <p class="p-2 bg-body-secondary w-50 m-auto text-center border border-secondary border-5 border-end-0 rounded-start-2 fs-3 font-monospace">Margin ms | me | mt | mb | mx | my</p>
+        <div class="row">
+            <div class="caja bg-primary ms-1 mb-1 mt-3 text-white w-75">Caja 1 | ms-1 </div> <!--ps= padding left px=padding left y righ py= top, botrom-->
+            <div class="w-100"></div>
+            <div class="caja bg-success ms-2 mb-1 text-white w-75">Caja 2 | ms-2 </div> <!--"ms" para margin left-->
+            <div class="w-100"></div>
+            <div class="caja bg-danger ms-3 mb-1 text-white w-75">Caja 3 | ms-3 </div> <!--"e" para margin right-->
+            <div class="w-100"></div>
+            <div class="caja bg-secondary ms-4 mb-1 text-white w-75">Caja 4 | ms-4 </div> <!--"e" para margin right-->
+            <div class="w-100"></div>
+            <div class="caja bg-info ms-5 mb-5 text-white w-75">Caja 5 | ms-5</div> <!--"e" para margin right-->
+            <p class="bg-body-secondary w-50 text-center lh-1 py-1 m-auto fs-3 font-monospace">Padding | ps | pe | pt | pb | px | py</p>
+            <div class="caja bg-primary  mb-1 mt-3 p-1 text-white w-75">Caja 1 | p-1 </div> <!--ps= padding left px=padding left y righ py= top, botrom-->
+            <div class="w-100"></div>
+            <div class="caja bg-success mb-1 text-white p-2 w-75">Caja 2 | p-2</div> <!--"ms" para margin left-->
+            <div class="w-100"></div>
+            <div class="caja bg-danger  mb-1 text-white w-75 p-3">Caja 3 | p-3 </div> <!--"e" para margin right-->
+            <div class="w-100"></div>
+            <div class="caja bg-secondary mb-1 text-white w-75 p-4">Caja 4 | p-4</div> <!--"e" para margin right-->
+            <div class="caja bg-warning mb-1 text-white w-75 p-4">Caja 5 | p-5</div> <!--"e" para margin right-->
+            <div class="w-100"></div>
+        </div>
+    </div>
+<!-- Box shadow en bootstrap 5.3.0 -->
+<!-- Sintaxis: -->
+<!-- shadow-none: para eliminar sombras -->
+<!-- shadow-sm -> sombra pequena -->
+<!-- shadow -> sombra normal -->
+<!-- shadow-lg -> sombra grande -->
+
+<div class="container">
+    <p class="bg-danger-subtle w-25 text-center py-2 my-2 m-auto rounded">Sombra | shadow</p>
+  <div class="row row-cols-1">
+    <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded fw-light w-75 m-auto">sin sombra | shadow-none</div>
+    <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded fw-light w-75 m-auto">sombra pequeña | shadown-sm</div>
+    <div class="shadow p-3 mb-5 bg-body-tertiary rounded fw-light w-75 m-auto">sombra regular | shadow</div>
+    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded fw-light w-75 m-auto">sombra grande | shadow-lg </div>
+  </div>
+</div>
+<!-- Tamaños:  -->
+<!-- Relativos al padre -->
+<!-- Sintaxis -->
+<!-- lado-tamaño -->
+<!-- lado -> Horizontal (Ancho) = w | mw  -->
+            <!-- Vertical (Alto) = h | mh-->
+<!-- Tamano  -> 25 | 50 | 75 | 100 % -->
+<!-- Relativos a la ventana  -->
+<!-- Sintaxis:  -->
+<!-- lado-100 -->
+<!-- Lado -> Horizontal = vw -->
+       <!-- Vertical = vh -->
+<div class="container">
+  <h1 class="text-center text-muted fst-italic">Tamaños | Sizes</h1>
+  <h1 class="text-center text-lowercase fw-normal text-black-50 font-monospace fs-2">width | w-25 | w-50 | w-75 | w-100</h1>
+  <div class="row">
+    <div class="col-12">
+        <div class="bg-dark mb-2 contenedor mx-auto">
+          <div class="bg-primary mb-2 text-center text-light fw-bolder text-uppercase py-2 w-25 fs-3">caja 1 | w-25</div>
+          <div class="bg-success mb-2 text-center text-light fw-bolder text-uppercase py-2 w-50 fs-3">caja 2 | w-50</div>
+          <div class="bg-warning mb-2 text-center text-light fw-bolder text-uppercase py-2 w-75 fs-3">caja 3 | w-75</div>
+          <div class="bg-danger mb-2 text-center text-light fw-bolder text-uppercase py-2 w-100 fs-3">caja 4 | w-100</div>
+        </div>
+    </div>
+  </div>
+  <h1 class="h2 text-center text-black-50 text-uppercase font-monospace">height | h-25 | h-50 | h-75 | h-100</h1>
+  <div class="row">
+    <div class="col-12">
+        <div class="bg-dark contenedor mx-auto d-flex">
+          <div class="bg-primary mb-2 text-center text-light fw-bolder text-uppercase p-2 h-25 fs-4">caja 1 | h-25</div>
+          <div class="bg-success mb-2 text-center text-light fw-bolder text-uppercase p-2 h-50 fs-4">caja 2 | h-50</div>
+          <div class="bg-warning mb-2 text-center text-light fw-bolder text-uppercase p-2 h-75 fs-4">caja 3 | h-75</div>
+          <div class="bg-danger mb-2 text-center text-light fw-bolder text-uppercase p-2 h-100 fs-4">caja 4 | h-100</div>
+        </div>
+    </div>
+  </div>
+</div>
+<p class="w-25 p-2 text-center m-auto bg-danger-subtle my-2 rounded-end-3">viewport width | vw-100</p>
+<div class="bg-secondary text-center text-light fw-bolder text-uppercase py-2 vw-100 ">caja 5</div>
+<p class="w-25 p-2 text-center m-auto bg-info-subtle my-2 rounded-end-3">viewport height | vh-100</p>
+<div class="bg-info text-center text-light fw-bolder text-uppercase p-2 vh-100 w-25 m-auto">caja 5</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

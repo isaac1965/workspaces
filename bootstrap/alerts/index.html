@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+    body {
+        background: linear-gradient(to top, rgba(28, 211, 246, .8), rgba(25, 131, 233, .4));
+    }
+    .box-style {
+       width: 500px;
+       height: 400px;
+       background: rgba(255, 255, 255, .5);
+       margin: 0 auto;
+       box-shadow: 10px 10px 10px  #1EBED7;
+       -webkit-backdrop-filter:blur(40px);
+    }
+  ::-webkit-scrollbar {
+       width: 13px;
+    }
+    ::-webkit-scrollbar-track {
+       background: #00cc99;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #6600ff;
+    }
+    .decoration {
+      text-decoration: underline double;
+    }
+    </style>
+</head> 
+<body>
+    <div class="container">
+        <h2 class="w-50 mx-auto text-center">Alertas</h2>
+        <div class="alert alert-danger mt-3" role="alert">Esto es una alerta</div>
+        <h2 class="w-50 mx-auto text-center">links dentro alertas</h2>
+        <div class="alert alert-danger mt-3">
+            Relleno de alerta <a href="#" class="alert-link">Esto es un link dentro de un alert</a>
+        </div>
+        <h2 class="w-50 mx-auto text-center text-capitalize fw-medium decoration">Encabezados dentro de alertas</h2>
+        <div class="alert alert-warning mt-3" role="alert">
+        <!--clase alert-heading para etiquetas tipo encabezado h1, h2 etc-->
+            Relleno de alerta <a href="#" class="alert-link">Esto es un link dentro de un alert</a>
+            <h5 class="alert-heading">contenido adicional</h5>
+            <p>Elit et obcaecati a totam <a href="" class="alert-link">accede aquí para mas información</a></p>
+        </div>
+        <h2 class="w-50 mx-auto text-center">Cerrar alertas</h2>
+        <div class="alert alert-success text-uppercase alert-dismissible fade show" role="alert">Cerrar alertas
+            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <h2 class="w-50 mx-auto text-center text-capitalize font-monospace fst-italic ">Alertas con iconos</h2>
+    <div class="alert alert-warning w-75 mx-auto d-flex align-items-center rounded-0" role="alert">
+        <i class="fa fa-warning me-2 "></i>
+        <div >Esto es una alerta</div>
+    </div>
+   <div class="box-style">
+
+   </div>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

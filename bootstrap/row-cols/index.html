@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+        font-size: 30px;
+    }
+    .flex-content {
+        background: #000;
+        width: 500px;
+       /* height: 500px;*/
+    }
+    .flex-item {
+        width: 100px;
+        height: 100px;
+    }
+    </style>
+</head> 
+<body>
+<!--Fila-->
+<!--row-->
+<!--row-cols-numero-->
+<!--xs Menos 576 px-->
+<!--sm Mas 576 px y menos 768px-->
+<!--md Mas de 768px y menos de 992px-->
+<!--lg Mas de 992px y menos de 1200px-->
+<!--xl Mas de 1200px y menos de 1400px-->
+<!--xxl Mas de 1400px-->
+
+<!--row-cols-tamaño-numero-->
+<!--xs Menos 576 px-->
+<!--sm Mas 576 px y menos 768px-->
+<!--md Mas de 768px y menos de 992px-->
+<!--lg Mas de 992px y menos de 1200px-->
+<!--xl Mas de 1200px y menos de 1400px-->
+<!--xxl Mas de 1400px-->
+<!--<div class="container">-->
+
+    <!--<div class="row row-cols-xs-3 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-1">-->
+        <!--<div class="bg-primary">Columna 1</div>-->
+        <!--<div class="bg-warning">Columna 2</div>-->
+        <!--<div class="bg-danger">Columna 3</div>-->
+        <!--<div class="bg-info">Columna 4</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--row-cols-auto-->
+<!--El ancho de las columnas que estan adentro del row va a ser igual al contenido que guardan-->
+
+<!--row-cols-tamaño-numero-->
+<p class="m-auto text-center w-25 fs-4 text-uppercase fw-medium border border-success rounded-top-5 border-5 mt-2 border-opacity-50">row-cols</p>
+<h1 class="w-75 text-center mx-auto font-monospace fs-5 mb-2 border border-secondary border-4 py-2 m-2 border-opacity-50"><strong class="text-secondary">row-cols-tamaño-numero</strong> | row-col-xs-1 | row-cols-sm-2 | row-cols-md-3 | row-cols-lg-4 | row-cols-xl-5 row-cols-xxl-5</h1>
+    <div class="container">
+        <div class="row row-cols-xs-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 border border-success border-4">
+            <div class="bg-primary">Columna 1</div>
+            <div class="bg-warning">Columna 2</div>
+            <div class="bg-danger">Columna 3</div>
+            <div class="bg-info">Columna 4</div>
+            <div class="bg-secondary">Columna 5</div>
+            <div class="bg-dark-subtle">Columna 6</div>
+        </div>
+    </div>
+    <br>
+<!--row-cols-numero-->
+    <div class="container">
+        <h1 class="w-50 text-center m-auto font-monospace fs-4 mb-2 border border-secondary border-4 py-2"><strong class="text-success">row-cols-numero</strong> | row-col-6</h1>
+        <div class="row row-cols-2 border border-success border-4">
+            <div class="bg-primary">Columna 1</div>
+            <div class="bg-warning">Columna 2</div>
+            <div class="bg-danger">Columna 3</div>
+            <div class="bg-info">Columna 4</div>
+            <div class="bg-secondary">Columna 5</div>
+            <div class="bg-dark-subtle">Columna 6</div>
+    </div>
+<!--row-cols-auto-->
+    <div class="container">
+        <h1 class="w-25 text-center m-auto font-monospace fs-4 mb-2 border border-secondary border-4 py-2 mt-2">row-cols-auto</h1>
+        <div class="row row-cols-auto border justify-content-center border-success border-4">
+            <div class="bg-primary">Columna 1</div>
+            <div class="bg-warning">Columna 2</div>
+            <div class="bg-danger">Columna 3</div>
+            <div class="bg-info">Columna 4</div>
+            <div class="bg-secondary">Columna 5</div>
+            <div class="bg-dark-subtle">Columna 6</div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

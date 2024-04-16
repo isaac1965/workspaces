@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+    body {
+        font-size: 20px;
+        color: #fff;
+        background-image: #262626;
+        width: 100vw;
+        height: 100vh;
+    }
+    .carrito{
+       color: black;
+       font-size: 30px;
+    }
+    .caret-down {
+        color: green;
+        font-size: 30px;
+    }
+    </style>
+</head> 
+<body>
+    <h3 class="text-capitalize  w-50 mx-auto text-center text-secondary fw-semibold">badges</h3>
+    <div class="box w-50 mx-auto mt-3 text-center">
+        <button type="button" class="btn btn-primary position-relative">notificaciones
+            <span class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded-circle p-2 ">
+                <span class="visually-hidden">New alerts</span>
+            </span>
+        </button>
+        <button type="button" class="btn btn-secondary position-relative me-5 rounded-5">
+            notificaciones
+            <span class="badge text-bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">+99</span>
+        </button>
+        <button type="button" class="btn p-0 position-relative me-5">
+            <i class="fa fa-cart-shopping carrito"></i>
+            <span class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded-circle">5</span>
+        </button>
+        <button type="button" class="btn btn-success position-relative">
+            Menú
+            <span class="badge position-absolute top-100 start-50 translate-middle">
+                <i class="fa fa-caret-down caret-down"></i>
+            </span>
+        </button>
+    </div>
+ <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

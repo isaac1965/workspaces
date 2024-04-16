@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+    body {
+        font-size: 20px;
+        color: #fff;
+        <!--background-image: linear-gradient(to top, #383131, #957F7F);-->
+        width: 100vw;
+        height: 100vh;
+        background: #656565;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        color: black;
+        content: '＞';
+    }
+    </style>
+</head> 
+<body>
+    <!--breadcrumbs-->
+    <!--clases-->
+    <!--breadcrumb-->
+    <!--breadcrumb-item-->
+    <!--active-->
+    <!--aria-current="page"-->
+    <!--<nav>-->
+    <!--<ol >-->
+    <div class="container">
+        <div class="row-col-1">
+            <h1 class="text-capitalize mx-auto text-center fw-lighter fst-normal">breadcrumb</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-decoration-none text-light">Inicio</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Diseño
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-decoration-none text-light">Fotografía</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-decoration-none text-light">Filtros</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+        font-size: 30px;
+    }
+    .flex-content {
+        background: #000;
+        width: 500px;
+       /* height: 500px;*/
+    }
+    .flex-item {
+        width: 100px;
+        height: 100px;
+    }
+    .flex-item1 {
+        background: #70D339;
+    }
+    .flex-item2 {
+        background: #EBC13E;
+    }
+    .flex-item3 {
+        background: #CA2CCD;
+    }
+    .flex-item4 {
+        background: #3C8CD1;
+    }
+    </style>
+</head> 
+<body>
+
+<!--Contenedor-->
+<!--container este centra el contenido-->
+<!--container-tamaño e.g: container-sm, container-md etc-->
+<!--container-fluid abarca el 100% de la pantalla-->
+
+    <!--<div class="container-sm">-->
+        <!--<div class="row">-->
+            <!--<div class="col">Hola mundo </div>-->
+            <!--<div class="col">Hola Cristal</div>-->
+            <!--<div class="col">Hola Fran</div>-->
+            <!--<div class="col">Hola Lulys</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    
+
+
+<!--"col" divide entre la cantidad de columnas que tiene row=12/col=3=col=4 --> 
+<!--Divide las columnas en el numero de columnas que hay dentro de un row-->
+
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col">Col-1</div>-->
+        <!--<div class="col">Col-2</div>-->
+        <!--<div class="col">Col-3</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--col-auto-->
+<!--Es igual al ancho del elemento que el "col" contiene-->
+
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col">col normal</div>-->
+        <!--<div class="col-auto">col con la clase auto</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--col-numero-->
+<!--El ancho de la columna es igual al numero que le pases-->
+<!--<div class="container" style="background: black; height: 300px;">-->
+    <!--<div class="row">-->
+        <!--<div class="col-5" style="background: violet;">Hola Cristal</div>-->
+        <!--<div class="col-7" style="background: orange;">Hola Isaac</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--col-tamaño-->
+<!--xs Menos 576 px-->
+<!--sm Mas 576 px y menos 768px-->
+<!--md Mas de 768px y menos de 992px-->
+<!--lg Mas de 992px y menos de 1200px-->
+<!--xl Mas de 1200px y menos de 1400px-->
+<!--xxl Mas de 1400px-->
+
+<!--col-tamaño-auto-->
+<!--xs Menos 576 px-->
+<!--sm Mas 576 px y menos 768px-->
+<!--md Mas de 768px y menos de 992px-->
+<!--lg Mas de 992px y menos de 1200px-->
+<!--xl Mas de 1200px y menos de 1400px-->
+<!--xxl Mas de 1400px-->
+
+<!--col-tamaño-numero-->
+<!--xs Menos 576 px-->
+<!--sm Mas 576 px y menos 768px-->
+<!--md Mas de 768px y menos de 992px-->
+<!--lg Mas de 992px y menos de 1200px-->
+<!--xl Mas de 1200px y menos de 1400px-->
+<!--xxl Mas de 1400px-->
+    <!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-xs-5 col-sm-2 col-md-5 col-lg-6 col-xl-2 col-xxl-1 ">Hola Cristal</div>-->
+        <!--<div class="col-xs-7 col-sm-8 col-md-7 col-lg-6 col-xl-10 col-xxl-11 ">Hola Isaac</div>-->
+        <!--<div class="col-xs-7 col-sm-8 col-md-7 col-lg-6 col-xl-10 col-xxl-11 ">Hola Samuel</div>-->
+        <!--<div class="col-xs-7 col-sm-8 col-md-7 col-lg-6 col-xl-10 col-xxl-11 ">Hola Gustavo</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+<!--gutters aplican solo para darle margin a los rows sintaxys=g-0 hasta 5-->
+<!--gutter=margin para el eje x = gx-0 hasta 5-->
+<!--gutter=margin para el eje y = gy-0 hasta 5 igual-->
+
+<!--Reordenamiento de columnas-->
+<!--Sintaxis: order-tamaño-numero-->
+<!--tamaño: opcional -->
+<!--order del 1 al 5-->
+<!--order-first pone la columna al inicio -> order-->
+<!--order-last pone la columna al final ->order-->
+
+<!--Fila-->
+<!--row-->
+<!--row-cols-numero-->
+<!--xs Menos 576 px-->
+<!--sm Mas 576 px y menos 768px-->
+<!--md Mas de 768px y menos de 992px-->
+<!--lg Mas de 992px y menos de 1200px-->
+<!--xl Mas de 1200px y menos de 1400px-->
+<!--xxl Mas de 1400px-->
+
+<!--row-cols-tamaño-numero-->
+<!--xs Menos 576 px-->
+<!--sm Mas 576 px y menos 768px-->
+<!--md Mas de 768px y menos de 992px-->
+<!--lg Mas de 992px y menos de 1200px-->
+<!--xl Mas de 1200px y menos de 1400px-->
+<!--xxl Mas de 1400px-->
+<!--<div class="container">-->
+    <!--<div class="row row-cols-xs-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-1">-->
+        <!--<div class="">Hola Cristal</div>-->
+        <!--<div class="">Hola Fran</div>-->
+        <!--<div class="">Hola Lulys</div>-->
+        <!--<div class="">Hola Isaac</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!--row-cols-auto-->
+<!--El ancho de las columnas que estan adentro del row va a ser igual al contenido que guardan-->
+<!--Alineacion para las COLUMNAS-->
+<!--Sintaxis: eje-mod-ubicacion-->
+<!--Eje: main axis -> justify-->
+<!--cross axis -> align-->
+<!--modo: content -> grupo-->
+<!--items -> linea-->
+<!--self-> individual-->
+<!--ubicacion: align: start -> Inicio-->
+<!--center -> centro-->
+<!--end -> fin-->
+<!--justify: start -> Inicio-->
+<!--center -> centro-->
+<!--end -> final-->
+<!--around -> alrededor-->
+<!--between -> entre-->
+<!--evenly -> espacios igual-->
+
+<!--<div class="container">-->
+    <!--<div class="row justify-content-center fila">-->
+        <!--<div class="col-4 columna1 justify-self-center align-self-center columna">1</div>-->
+        <!--<div class="col-6 columna2 columna">2</div>-->
+        <!--<div class="col-4 columna3 columna">3</div>-->
+        <!--<div class="col-6 columna4 columna">4</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--Utilizando flexbox en bootstrap-->
+<div class="d-flex justify-content-end flex-content bg-dark text-white text-center">
+    <div class="flex-item flex-item1 p-2 bg-info">1</div>
+    <div class="flex-item flex-item2 p-2 bg-warning">2</div>
+    <div class="flex-item flex-item3 p-2 bg-success">3</div>
+    <div class="flex-item flex-item4 p-2 bg-danger">4</div>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

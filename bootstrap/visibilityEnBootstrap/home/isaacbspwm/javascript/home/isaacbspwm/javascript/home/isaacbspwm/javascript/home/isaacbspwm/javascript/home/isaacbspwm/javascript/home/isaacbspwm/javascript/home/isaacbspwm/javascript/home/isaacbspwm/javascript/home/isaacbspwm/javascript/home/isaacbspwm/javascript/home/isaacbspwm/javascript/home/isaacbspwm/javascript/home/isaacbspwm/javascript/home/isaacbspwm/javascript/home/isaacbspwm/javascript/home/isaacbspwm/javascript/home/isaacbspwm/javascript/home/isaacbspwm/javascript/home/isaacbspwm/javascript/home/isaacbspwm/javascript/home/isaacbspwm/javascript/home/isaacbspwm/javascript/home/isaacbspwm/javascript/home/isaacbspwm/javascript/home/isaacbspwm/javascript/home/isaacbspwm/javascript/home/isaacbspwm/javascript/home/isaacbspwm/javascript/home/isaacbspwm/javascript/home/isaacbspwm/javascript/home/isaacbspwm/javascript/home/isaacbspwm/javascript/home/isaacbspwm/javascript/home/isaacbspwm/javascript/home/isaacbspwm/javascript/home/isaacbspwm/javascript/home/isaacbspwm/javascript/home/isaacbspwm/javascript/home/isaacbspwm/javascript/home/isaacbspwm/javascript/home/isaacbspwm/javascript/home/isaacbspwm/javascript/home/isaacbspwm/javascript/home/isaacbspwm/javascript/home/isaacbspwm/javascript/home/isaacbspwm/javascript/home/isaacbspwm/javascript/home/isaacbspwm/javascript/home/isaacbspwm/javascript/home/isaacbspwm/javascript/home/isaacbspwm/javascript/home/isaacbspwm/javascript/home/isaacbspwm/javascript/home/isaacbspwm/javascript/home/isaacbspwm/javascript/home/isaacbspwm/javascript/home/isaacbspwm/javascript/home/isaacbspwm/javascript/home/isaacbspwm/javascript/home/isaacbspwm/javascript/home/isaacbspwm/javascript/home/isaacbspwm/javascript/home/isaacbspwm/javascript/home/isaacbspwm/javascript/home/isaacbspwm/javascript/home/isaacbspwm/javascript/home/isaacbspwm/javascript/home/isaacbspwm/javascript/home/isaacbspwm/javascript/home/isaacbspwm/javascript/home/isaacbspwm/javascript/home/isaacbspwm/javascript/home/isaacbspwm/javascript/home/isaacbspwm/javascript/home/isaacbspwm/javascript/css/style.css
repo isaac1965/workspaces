@@ -1,0 +1,24 @@
+.fila {
+    background: blue;
+    height:300px;
+    color: black;
+}
+.columna {
+    height: 50px;
+    outline: 3px solid #3EC827;
+}
+.columna1 {
+    background: #3ED502;
+}
+
+.columna2{
+    background: #CC4316;
+}
+
+.columna3 {
+    background: #CA27C0;
+}
+
+.columna4 {
+    background: #59B8C0;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Trabajando Imagenes en bootstrap 5.3.0 correctamente</title>
+  <style>
+    body {
+      background-image: linear-gradient(to top, pink 0%, lightblue 100%);
+      height: 100vh;
+    }
+    .flex-item {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+<!-- Imagenes: -->
+<!-- Imagen responsiva: img-fluid -->
+<!-- Imagen con borde blanco: img-thumbnail -->
+<!-- figure & figcaption -->
+<!-- figure -->
+<!-- figure-caption -->
+<!-- figure-img -->
+<div class="d-flex justify-content-around align-items-center h-100">
+    <article class="mb-3 shadow-lg flex-item bg-primary">
+        <!-- <p class="text-center text-white mb-0 text-capitalize">imagen</p> -->
+        <img src="img/img1.jpg" alt="I cannot to find image!" class="img-fluid ">
+    </article>
+    <article class="mb-3 shadow-lg flex-item ">
+        <!-- <p class="text-center text-white mb-0 text-capitalize">imagen</p> -->
+        <img src="img/img1.jpg" alt="I cannot to find image!" class="img-fluid img-thumbnail ">
+    </article>
+    <article class="mb-3 shadow-lg flex-item px-2">
+        <h1 class="h3 text-muted text-center fw-light text-uppercase mt-1 lh-1">Title</h1>
+        <p class="text-center text-body-tertiary fw-light fs-6 font-monospace py-2 text-capitalize lh-1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+        enim facilis vel a animi aliquid asperiores sunt magni sint minima! Lorem
+        ipsum dolor sit amet 
+        consectetur, adipisicing elit. Aspernatur, placeat?
+        </p>
+        <figure class="figure">
+            <img src="img/img1.jpg" alt="I cannot to find image!" class="img-fluid img-thumbnail figure-img rounded-circle border">
+            <figcaption class="figure-caption">
+                <cite class="fs-6">Nombre de autor</cite>
+            </figcaption>
+        </figure>
+    </article>
+</div>
+</body>
+</html>

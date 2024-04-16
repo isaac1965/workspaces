@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+        font-size: 20px;
+        color: #fff;
+        background: #343844;
+        /* background: honeydew; */
+        /* background-image: linear-gradient(to top, #383131, #957F7F); */ */
+        width: 100vw;
+        height: 100vh;
+    }
+    .caja {
+        width: 300px;
+        height: 300px;
+        background: #1D1C1C;
+        margin: 10px;
+        text-align: center;
+    }
+    .caja-rectangulo {
+        width: 400px;
+        height: 150px;
+        background: #1D1C1C;
+        margin: 10px;
+        text-align: center;
+    }
+    h2 {
+        margin: 0 auto;
+    }
+    </style>
+</head> 
+<body>
+
+<!--Bordes Redondeados-->
+<!--Anadir bordes redondeados-->
+<!--Eliminar bordes redondeados-->
+<!--rounded-0-->
+<!--rounded-->
+<!--rounded-circle-->
+<!--rounded-pill-->
+<!--rounded-lado-->
+            <!---top-->
+            <!---end-->
+            <!---bottom-->
+            <!---start-->
+<!--Tamanos de bordes:-->
+<!--rounded-tamano-->
+            <!---sm-->
+            <!---lg-->
+<!-- Colores en bordes: -->
+<!-- Sintaxis:border-lado -->
+                       <!-- -start = left -->
+                       <!-- end = right -->
+                       <!-- top = arriba -->
+                       <!-- bottom = abajo -->
+<!-- border -> aplica bordes a todos los lados -->
+
+    <section class="container">
+        <div class="row">
+            <h2 class="col-12 text-white fw-light fst-italic text-capitalize text-center my-3 py-3 rounded-top-2 border-success border-bottom border-5 bg-dark border-opacity-25">bordes redondeados</h2>
+            <article class="caja rounded rounded-0 ">1</article>
+            <article class="caja rounded-circle">2</article>
+            <article class="caja-rectangulo rounded-pill">3</article>
+            <article class="caja rounded-top-4 border-danger border-top border-3">4</article>
+            <article class="caja rounded-bottom-4 border-primary border-bottom border-3">5</article>
+            <article class="caja rounded-end-4 border-success border-start border-3">6</article>
+            <article class="caja rounded-start border-warning border-start border-3">7</article>
+        </div>
+    </section>
+    <div class="container">
+        <h2 class="h2 fst-normal fw-lighter text-uppercase text-white px-3 py-3 bg-primary mt-3 text-center rounded-bottom border-top border-3 border-warning shadown-lg">opacidad en bordes</h2>
+        <div class="row row-cols-1"></div>
+        <p class="bg-white text-dark border px-2 py-2 text-center text-uppercase fw-bolder border-success border-5 border-opacity-10">opacidad 10%</p>
+        <p class="bg-white text-dark fw-bolder fst-normal px-2 py-2 text-center text-uppercase border border-success border-5 border-opacity-25">opacidad 25%</p>
+        <p class="bg-white text-dark fw-bolder fst-normal px-2 py-2 text-center text-uppercase border border-success border-5 border-opacity-50">opacidad 50%</p>
+        <p class="bg-white text-dark fw-bolder fst-normal px-2 py-2 text-center text-uppercase border border-success border-5 border-opacity-75">opacidad 75%</p>
+        <p class="bg-white text-dark fw-bolder fst-normal px-2 py-2 text-center text-upperrcase border border-succes border-5 border-opacity-100">opacidad 100%</p>
+        <!-- El border opacity se puede utilizar para un solo border ejemplo: top, bottom etc... -->
+        <p class="bg-white text-dark fw-bolder fst-italic px-2 py-2 text-center text-lowercase border-success border-top border-5 border-opacity-75">Opacidad para los lados</p>
+        <h1 class="h2 bg-dark px-3 py-3 text-center text-capitalize border-danger rounded-end-3 border-end border-3">eliminar bordes</h1>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-start-0">Eliminado el border start</p>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-end-0">Eliminado el border end</p>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-top-0">Eliminado el border top</p>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-bottom-0">Eliminado el border bottom</p>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-0">Eliminado el todos los bordes</p>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-top-0 border-bottom-0">Eliminado bordes verticales</p>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-start-0 border-end-0">Eliminado bordes horizontales</p>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-top-0 border-end-0 border-start-0">Eliminado tres bordes </p>
+        <p class="bg-dark text-center text-uppercase fw-bold px-2 py-2 border border-info border-5 border-top-0 border-end-0 ">Eliminado dos bordes </p>
+    </div>
+</body>
+</html>

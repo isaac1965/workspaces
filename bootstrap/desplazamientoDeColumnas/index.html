@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    .fila{
+        width: 900px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .columna{
+        width: 100px;
+        height: 100px;
+    }
+    </style>
+</head> 
+<body>
+<!--Desplazamiento de columnas-->
+<!--El ancho de las columnas que estan adentro del row va a ser igual al contenido que guardan-->
+<!--Alineacion para las COLUMNAS-->
+<!--Sintaxis: eje-mod-ubicacion-->
+<!--Eje: main axis -> justify-->
+<!--cross axis -> align-->
+<!--modo: content -> grupo-->
+<!--items -> linea-->
+<!--self-> individual-->
+<!--ubicacion: align: start -> Inicio-->
+<!--center -> centro-->
+<!--end -> fin-->
+<!--justify: start -> Inicio-->
+<!--center -> centro-->
+<!--end -> final-->
+<!--around -> alrededor-->
+<!--between -> entre-->
+<!--evenly -> espacios igual-->
+
+<div class="container">
+    <div class="row fila bg-dark d-flex align-items-center justify-content-center text-white col-auto fs-4">
+        <div class="text-center lh-lg col-4 columna bg-info">1</div>
+        <div class="text-center lh-lg col-6 columna bg-warning">2</div>
+        <div class="text-center lh-lg col-4 columna bg-danger">3</div>
+        <div class="text-center lh-lg col-6 columna bg-success">4</div>
+    </div 
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

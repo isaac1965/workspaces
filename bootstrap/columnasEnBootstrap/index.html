@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
+</head> 
+<body> 
+<!--Columnas-->
+<!--"col" divide entre la cantidad de columnas definidas dentro del row y todas tienen el mismo ancho-->
+<!--col-->
+    <div class="container"> 
+        <h1 class="h3 text-center text-white bg-success mx-auto w-50 text-capitalize mt-2 py-2 rounded rounded-3">clase col</h1>
+        <div class="row">
+            <div class="col bg-dark text-white text-uppercase fst-normal fw-bold p-4 border border-danger border-3">columna 1</div>
+            <div class="col bg-dark text-white text-uppercase fst-normal fw-bold p-4 border border-danger border-3">columna 2</div>
+            <div class="col bg-dark text-white text-uppercase fst-normal fw-bold p-4 border border-danger border-3">columna 3</div>
+            <div class="col bg-dark text-white text-uppercase fst-normal fw-bold p-4 border border-danger border-3">columna 4</div>
+            <div class="w-100"></div>
+        </div>
+<!--col-auto-->
+<!--Es igual al ancho del elemento que lo contiene-->
+            <h2 class="h3 w-25 mx-auto bg-info text-white text-center py-2 mt-5 rounded-pill text-lowercase">CLASE COL-AUTO</h2>
+        <div class="row  mt-5 bg-dark justify-content-center">
+            <div class="col-auto bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3 border-warning border border-3 order-last">columna 1</div>   
+            <div class="col-auto bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3 border-warning border border-3">columna 2</div>   
+            <div class="col-auto bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3 border-warning border border-3 order-first">columna 3</div>   
+            <div class="col-auto bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3 border-warning border border-3">columna 4</div>   
+        </div>
+<!--col-numero-->
+<!--El ancho de la columna es igual al numero que le pases-->
+            <h2 class="h3 w-25 mx-auto bg-primary text-white text-center py-2 mt-5 rounded-end text-lowercase">Clase col-numero</h2>
+        <div class="row  mt-5 justify-content-center gy-3">
+            <div class="col-6 bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3 ">columna 1</div>   
+            <div class="col-6 bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3 ">columna 2</div>   
+            <div class="col-6 bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3 ">columna 3</div>   
+            <div class="col-6 bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3 ">columna 4</div>   
+        </div>
+<!--col-tamaño-->
+<!--xs Menos 576px-->
+<!--sm Mas de 576px menos 768px -->
+<!--md Mas de 768px menor de 992px -->
+<!--lg mas de 992px y menor de 1200px-->
+<!--xl mas de 1200px y menor de 1400px-->
+<!--xxl mas 1400px-->
+        <h2 class="h3 w-25 mx-auto bg-warning text-white text-center py-2 mt-5 rounded-start text-lowercase">Clase col-tamaño</h2>
+        <div class="row  mt-5 justify-content-center gy-3">
+            <div class="col-md col-lg bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 1</div>   
+            <div class="col-md col-lg bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 2</div>   
+            <div class="col-md col-lg bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 3</div>   
+            <div class="col-md col-lg bg-danger text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 4</div>   
+        </div>
+<!--col-tamaño-auto es lo mismo que col-auto-->
+        <h2 class="h3 w-50 mx-auto bg-secondary text-white text-center py-2 mt-5 rounded-start text-lowercase">Clase col-tamaño-auto</h2>
+        <div class="row  mt-5 justify-content-center gy-3">
+            <div class="col-xs-auto col-md-auto bg-primary text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 1</div>   
+            <div class="col-xs-auto col-md-auto bg-primary text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 2</div>   
+            <div class="col-xs-auto col-md-auto bg-primary text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 3</div>   
+            <div class="col-xs-auto col-md-auto bg-primary text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 4</div>   
+        </div>
+    </div>
+<!--col-tamaño-numero-->
+<h2 class="h3 w-50 mx-auto bg-secondary text-white text-center py-2 mt-5 rounded-start text-lowercase">Clase col-tamaño-numero</h2>
+<div class="container">
+        <div class="row">
+            <div class="col-md-6 bg-primary text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 1</div>   
+            <div class="col-md-6 bg-primary text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 2</div>   
+            <div class="col-md-6 bg-primary text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 3</div>   
+            <div class="col-md-6 bg-primary text-body-emphasis text-uppercase fs-6 fw-bolder py-3">columna 4</div>   
+        </div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script></script>
+</body>
+</html>

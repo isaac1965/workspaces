@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+        font-size: 30px;
+    }
+    .flex-content {
+        background: #000;
+        width: 600px;
+        height: 500px;
+        margin: 10px auto;
+    }
+    .flex-item {
+        width: 150px;
+        height: 100px;
+    }
+    .flex-item1 {
+        background: #70D339;
+    }
+    .flex-item2 {
+        background: #EBC13E;
+    }
+    .flex-item3 {
+        background: #CA2CCD;
+    }
+    .flex-item4 {
+        background: #3C8CD1;
+    }
+    .flex-item5 {
+        background: #DE6D00;
+    }
+    .posicion-1 {
+        top: 0;
+        left: 0;
+    }
+    .posicion-2 {
+        top: 0;
+        right: 0;
+    }
+    .posicion-3 {
+        bottom: 0;
+        left: 0;
+    }
+    .posicion-4 {
+        bottom: 0;
+        right: 0;
+    }
+    .posicion-6{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    </style>
+</head> 
+<body>
+    
+<!--Posicionamiento-->
+<!--Sintaxis: -->
+<!--Posicionamiento-tipo-->
+<!--tipo -> relative-->
+        <!--absolute-->
+        <!--fixed-->
+        <!--sticky-->
+    <!--fixed-->
+    <!--fixed-top-->
+    <!--Sticky-->
+    <!--sticky-to-->
+
+<div class="flex-content bg-dark text-white text-center position-relative">
+    <div class="flex-item flex-item1 p-2 bg-info position-absolute posicion-1">1</div>
+    <div class="flex-item flex-item2 p-2 bg-warning position-absolute posicion-2">2</div>
+    <div class="flex-item flex-item3 p-2 bg-success position-absolute posicion-3">3</div>
+    <div class="flex-item flex-item4 p-2 bg-danger position-absolute posicion-4">4</div>
+    <div class="flex-item flex-item5 p-2 bg-primary position-absolute posicion-6">5</div>
+    <!--<div class="flex-item flex-item4 p-2 bg-warning">4</div>-->
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

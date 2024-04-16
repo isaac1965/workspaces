@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+        font-size: 20px;
+        color: #fff;
+        <!--background-image: linear-gradient(to top, #383131, #957F7F);-->
+        width: 100vw;
+        height: 100vh;
+        background: #262626;
+    }
+    .caption-center {
+       top: 40%; 
+    }
+    .carousel-indicators [data-bs-target] {
+       width: 10px;
+       height: 10px;
+       border-radius: 100%;
+       outline:none;
+    }
+    </style>
+</head> 
+<body>
+    <!--Carousel -->
+    <!--paso #1: Crear Elemento padre con clase carousel, un ID data-bs-ride="carousel" y agregar la clase slice-->
+    <!--paso #2 Crear otro elemento padre con la clase carousel-inner -->
+    <!--paso #3 Crear un elemento hijo dentro del padre con la clase carousel-inner, con la clase carousel-item y clase active -->
+    <!--paso #4 Crear un <img> con la clase d-block y w-100-->
+    <!--intervalos de tiempo individuales agregar atributo data-iterval a elemento padre con calse carousel-item-->
+    <!--Controles agregar anclas <a> y ponerles clases carousel-control-prev y carousel-control-next y agregar atributos data-slide="prev" y data-slice="next"-->
+    <!--agregar tambien un <span> con clases carousel-control-prev-icon carousel-control-next-icon y atributos aria-hidden="true" y sr-only-->
+    <!--Indicadores: <ol> con clase carousel-indicators <li class="" data-target="" data-slide-to=""> -->
+    <p class="display-4 w-50 mx-auto text-center">Carousel</p>
+    <div class="carousel slide carousel-fade w-75 mx-auto" id="carousel-01" data-bs-ride="carousel">
+        <!--Indicadores-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-01" data-bs-slide-to="0" aria-label="1" aria-current="true" class="active"></button>
+            <button type="button" data-bs-target="#carousel-01" data-bs-slide-to="1" aria-label="2"></button >
+            <button type="button" data-bs-target="#carousel-01" data-bs-slide-to="2" aria-label="3"></button >
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-iterval="5000">
+                <img src="../img/img2.png" alt="landscape" class="d-block w-100">
+                <div class="carousel-caption caption-center">
+                    <h2>Titulo</h2>
+                    <p>dolores harum maxime quia officiis expedita. Repellat natus sit obcaecati officiis tenetur aperiam velit? consectetur at. Animi eveniet voluptates ad qui nisi Nostrum ullam sint.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="../img/img3.png" alt="portrait" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <img src="../img/img4.png" alt="none" class="d-block w-100">
+            </div>
+            <!--Controles-->
+            <a href="#carousel-01" class="carousel-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a href="#carousel-01" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>
+    </div>
+ <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

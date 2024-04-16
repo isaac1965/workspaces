@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de bootstrap</title>
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    html{
+        height: 1080px;
+
+    }
+    body {
+        font-size: 20px;
+        color: #fff;
+        background: #262626; 
+        width: auto;
+        height: 1080px;
+    }
+    </style>
+</head> 
+<body>
+<!--Tipografia-->
+<!--Encabezados-->
+<!--h1, h2, h3, ... h6-->
+<div class="container-fluid">
+<h6 class="h1 w-25 m-auto text-center">Encabezado h6 </h6>
+<h5 class="h2 w-25 m-auto text-center">Encabezado h5</h5>
+<h4 class="h3 w-25 m-auto text-center">Encabezado h4</h4>
+<h3 class="h4 w-25 m-auto text-center">Encabezado h3</h3>
+<h2 class="h5 w-25 m-auto text-center">Encabezado h2</h2>
+<h1 class="h6 w-25 m-auto text-center">Encabezado h1</h1>
+<p class="h3 text-success text-uppercase w-50 m-auto text-center">Parrafo con clase Encabezado h3</p>
+<!--Elementos destacados-->
+<!--Clases para encabezados-->
+<!--Encabezados-->
+<!--display-1-->
+       <!---2-->
+       <!---3-->
+       <!---4-->
+<h1 class="display-1 w-50 m-auto text-center">Encabezado h1 display-1</h1>
+<h2 class="display-2 w-50 m-auto text-center">Encabezado h2 display-2</h2>
+<h3 class="display-3 w-50 m-auto text-center">Encabezado h3 display-3</h3>
+<h4 class="display-4 w-50 m-auto text-center">Encabezado h4 display-4</h4>
+<p class="display-2 text-info w-75 m-auto text-center">Parrafo con clase Encabezado, display-2</p> <!--Se le puede aplicar la clase "display" pero no es lo que recomienda bootstrap -->
+<!--Párrafos destacados-->
+<!--clase: lead -->
+<p class="lead fs-4 text-warning w-50 m-auto text-center">Parrafo con la clase "lead"</p>
+<p class="w-50 m-auto text-center py-5 fs-4">Parrafo normal</p>
+
+<!--Etiqueta blockquote-->
+<!--clases:-->
+<!--Destacar: blockquote-->
+<!--Añadir al autor: blockquote-footer-->
+<blockquote class="blockquote w-75 m-auto text-capitalize border border-warning border-5 p-2 mb-5"><!-- La clase blockquote se puede omitir y dejar solo la etiqueta--> 
+    <p>
+    lorem aperiam id quasi esse ducimus? Repudiandae neque facilis distinctio delectus dolor? 
+        Aliquid ullam enim eius necessitatibus alias veritatis Architecto aliquid omnis iusto est ea?
+    </p>
+    <footer class="blockquote-footer text-end">
+        <cite>Nombre del autor</cite>
+    </footer>
+</blockquote>
+
+<!--Etiquetas de texto-->
+<!--<mark>, <del>, <s>-->
+    <p class="h2 text-center bg-body-secondary text-black-50 w-25 m-auto py-2 rounded-top-4 fst-italic font-monospace">Font weight & font-monospace</p>
+    <p class="fw-bold h2 w-25 m-auto text-center bg-primary bg-gradient mt-2 py-2">Font weight bold</p2>
+    <p class="fw-semibold fs-3 w-25 m-auto text-center bg-info bg-gradient mt-2 py-2">Font weight semibold</p2>
+    <p class="w-25 m-auto text-center py-2 bg-primary-subtle mt-2 fw-bolder h2 text-uppercase text-body-secondary">font weight bolder</p>
+    <p class="w-25 bg-secondary py-2 mt-2 text-center m-auto text-capitalize h2 ">font weight medium</p>
+    <p class="fw-normal text-center w-25 bg-danger m-auto mt-2 py-2 h2 text-lowercase ">FONT WEIGHT NORMAL</p>
+    <p class="fw-light text-center w-25 m-auto py-2 mt-2 h2 bg-danger-subtle text-body-secondary text-uppercase">font weight light</p>
+    <p class="fw-lighter text-center w-25 m-auto py-2 mt-2 h2 bg-success-subtle text-body-secondary text-uppercase">font weight lighter</p>
+    <p class="fst-normal fs-3 text-center w-25 m-auto py-2 mt-2 h2 bg-warning-subtle text-body-secondary text-uppercase">font Normal</p>
+    <p class="fst-italic fs-3 text-center w-25 m-auto py-2 mt-2 h2 bg-body-secondary bg-gradient text-body-secondary text-uppercase rounded-bottom-5">font italic</p>
+    <!--font size-->
+    <!--Sintaxis: -->
+    <!--fs-1, fs-2, fs-3, fs-4, fs-5, fs-6-->
+    <p class="h2 text-uppercase w-25 m-auto text-center mt-3 bg-primary py-2">font size</p>
+    <p class="fs-1 w-25 m-auto text-center">fs-1</p>
+    <p class="fs-2 w-25 m-auto text-center">fs-2</p>
+    <p class="fs-3 w-25 m-auto text-center">fs-3</p>
+    <p class="fs-4 w-25 m-auto text-center">fs-4</p>
+    <p class="fs-5 w-25 m-auto text-center">fs-5</p>
+    <p class="fs-6 w-25 m-auto text-center">fs-6</p>
+    <!--transformaciones de texto-->
+    <!--Sintaxis: text-transformacion-->
+    <p class="fs-2 text-dark w-25 m-auto text-center bg-body-tertiary my-3">Transformaciones de texto</p>
+    <p class="text-uppercase w-50 m-auto text-center fs-3">text-uppercase</p>
+    <p class="text-lowercase w-50 m-auto text-center fs-3">TEXT-LOWERCASE</p>
+    <p class="text-capitalize w-50 m-auto text-center fs-3">text-capitalize</p>
+</div>
+<!--Decoracion de texto-->
+<!--Para eliminar la decoracion del texto use: text-decoration-none a el elemento "a"-->
+<p class="bg-success w-25 py-2 m-auto my-2 text-center fs-3 fw-bolder border border-danger text-info-emphasis border-5 rounded-bottom-4 border-top-0">Decoraciones de texto</p>
+<p class="w-25 m-auto text-center bg-light text-danger-emphasis text-uppercase">aplicando text-decoration-none a los "a" </p>
+<ul class="bg-body w-25 m-auto my-2 list-unstyled text-center">
+    <li class="#"><a href="" class="text-decoration-none">decoration 1</a></li>
+    <li class="#"><a href="" class="text-decoration-none">decoration 2</a></li>
+    <li class="#"><a href="" class="text-decoration-none">decoration 3</a></li>
+</ul>
+<p class="bg-primary w-25 m-auto text-center p-2 fs-4 fst-normal border border-warning border-5 lh-1">Listas</p>
+<!--Listas-->
+<!--Eliminar margen y viñetas-->
+<!--list-unstyled-->
+<!--Listas en linea: -->
+<!--list-inline-item-->
+<!--list-inline ->no me funciona -->
+<p class="w-25 text-center m-auto bg-warning-subtle text-black-50 p-2 mt-2 text-capitalize">aplicando list-inline-item a los "li"</p>
+<ul class="w-25 m-auto my-3 bg-body">
+    <li class="list-inline-item"><a href="#">decoration 1</a></li>
+    <li class="list-inline-item"><a href="#">decoration 2</a></li>
+    <li class="list-inline-item"><a href="#">decoration 3</a></li>
+</ul>
+<p class="w-25 text-center m-auto bg-secondary p-2">Aplicando al UL class list-unstyled</p>
+<ul class="list-unstyled w-25 m-auto bg-body my-3 text-center">
+    <li class=""><a href="#">decoration 1</a></li>
+    <li class=""><a href="#">decoration 2</a></li>
+    <li class=""><a href="#">decoration 3</a></li>
+</ul>
+<script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
