@@ -1,1 +1,3 @@
-print("Hello World");
+variable = "center"
+
+print(variable.count)
