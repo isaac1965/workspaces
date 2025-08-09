@@ -6,7 +6,7 @@
 //sort(); ordena numeros de menor a mayor y letras en orden alfabetico
 //splice() indicar la posicion donde iniciar a eliminar un elemento y donde terminara de eliminar
 //join(); convierte un array a una cadena de texto con la particularidad de que puedes agregar separadores
-//slice(); elimina elementos de un array sin sin incluir el ultimo que se especifica
+//slice(); elimina elementos de un array sin sin incluir el ultimo que se especifica, el array original no se modifica
 // concat() El método se usa para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array.
 let nombre = ["isaac", "cristal", "lulys"];
 document.write(nombre + "<br>");

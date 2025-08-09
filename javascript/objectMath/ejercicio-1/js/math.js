@@ -3,7 +3,8 @@
 // max()
 // min()
 // random()
-// round()
+// round() redondea hacia abajo
+// ceil()redondea hacia arriba
 // floor()
 // trunc()
 // PI (PI tambien se usa sin parentesisi)
